@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap');
+/*outline*/
+* {
+    background-color: black;
+}
+
+header {
+    color: white;
+    text-align: center;
+}
+
+#p1 {
+    font-family: 'Dancing Script', cursive;
+}
+
+#p2{
+    color: white;
+    text-align: center;
+}
+
+#par1{
+    color: white;
+}
+
+.imgContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+.fir{
+    color: white;
+    display: none;
+    width: 200px;
+    height: 200px;
+    margin-left: 10px;
+    line-height: 25px;
+    font-family: 'Caveat', cursive;
+    font-size: 18px;
+}
+
+
+
+
+
+/*picture css*/
+#pic1 {
+   width: 200px;
+   height: 200px;
+   background-image: url(./Pics/georgeFloyd1.jpg);
+   background-blend-mode: luminosity;
+}
+
+#pic1:hover{
+    background-blend-mode: normal;
+}
+
+#pic1:hover + .fir{
+    display: block;
+    transition: 1s;
+}
+
+#pic2 {
+    width: 200px;
+    height: 200px;
+    background-image: url(./Pics/georgeFloyd2.jpg);
+    background-blend-mode:hard-light;
+}
+
+#pic2:hover{
+    background-blend-mode: normal;
+}
+
+#pic2:hover + .fir{
+    display: block;
+}
+
+#pic3 {
+    width: 200px;
+    height: 200px;
+    background-image: url(./Pics/georgeFloyd3.jpg);
+    background-blend-mode: darken;
+    background-color: lightgreen;
+    
+}
+
+#pic3:hover{
+    background-blend-mode: normal;
+}
+
+
+#pic3:hover + .fir{
+    display: block;
+}
+
+#pic4 {
+    width: 200px;
+    height: 200px;
+    background-image: url(./Pics/georgeFloyd4.jpg);
+    filter: blur(2px);
+}
+
+#pic4:hover{
+    filter: blur(0px);
+}
+
+
+#pic4:hover + .fir{
+    display: block;
+    filter: blur(0px);
+}
+
+#pic5 {
+    width: 200px;
+   height: 200px;
+   background-image: url(./Pics/georgeFloyd5.jpg);
+   filter: brightness(50%);
+}
+
+#pic5:hover{
+    filter: brightness(100%);
+}
+
+
+#pic5:hover + .fir{
+    display: block;
+}
+
+#pic6 {
+    width: 200px;
+   height: 200px;
+   background-image: url(./Pics/georgeFloyd6.jpg);
+   filter: contrast(2000%);
+}
+
+#pic6:hover{
+    filter: contrast(100%);
+}
+
+
+#pic6:hover + .fir{
+    display: block;
+}
